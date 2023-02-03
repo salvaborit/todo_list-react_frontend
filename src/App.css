@@ -1,0 +1,83 @@
+:root {
+  --gold-ratio-rem: 0.618rem;
+  --gold-ratio-em: 0.618em;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NewTaskForm {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 1em;
+  margin-top: 3em;
+}
+
+.NewTaskForm .nameField {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 2.5em;
+}
+
+.NewTaskForm .nameField label {
+  margin-bottom: 0.5rem;
+}
+
+.NewTaskForm .nameField input {
+  padding: var(--gold-ratio-em);
+  border-radius: 0.5em;
+  border: 1px solid black;
+}
+
+.NewTaskForm .tagSelector {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 2.5em;
+}
+
+.NewTaskForm .tagSelector label {
+  margin-bottom: 0.5em;
+}
+
+.NewTaskForm .tagSelector select {
+  border-radius: 0.5em;
+  padding: var(--gold-ratio-em);
+  border: 1px solid black;
+}
+
+.NewTaskForm button {
+  margin: 0.5em 2.5em;
+  padding: var(--gold-ratio-em) calc(var(--gold-ratio-em) * 2);
+  font-size: 1em;
+  border-radius: 0.5em;
+  align-self: center;
+  border: 1px solid black;
+}
+
+.TaskList {
+  min-width: 500px;
+}
+
+.TaskList ul {
+  list-style-type: none;
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 0.8em;
+}
+
+.TaskList li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: var(--gold-ratio-em);
+  margin-bottom: var(--gold-ratio-em);
+  border-radius: 0.5em;
+  background-color: #eee;
+}
